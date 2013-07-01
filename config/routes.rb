@@ -1,7 +1,9 @@
 Test::Application.routes.draw do
   devise_for :users
 
-  resources :cupons
+  resources :users do
+    resources :cupons
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

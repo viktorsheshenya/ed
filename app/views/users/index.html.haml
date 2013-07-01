@@ -1,2 +1,2 @@
 - if user_signed_in?
-  = link_to "Get Cupon", new_cupon_path , class: "btn btn-primary"
+  = link_to "Get Cupon", user_cupons_path(current_user) , class: "btn btn-primary", method: :post
